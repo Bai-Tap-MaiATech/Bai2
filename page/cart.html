@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SHOP.CO - Cart</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Satoshi:wght@400;500;700;900&family=Integral+CF:wght@700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/cart.css" />
+</head>
+
+<body>
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <p>
+      Sign up and get 20% off to your first order. <a href="#">Sign Up Now</a>
+    </p>
+    <button class="close-btn"><i class="fas fa-times"></i></button>
+  </div>
+
+  <!-- Header / Navbar -->
+  <header class="navbar">
+    <div class="mobile-menu-btn" style="display: none">
+      <i class="fas fa-bars"></i>
+    </div>
+    <a href="../index.html" class="logo" style="text-decoration: none; color: inherit;">SHOP.CO</a>
+    <nav class="nav-links">
+      <div class="dropdown">
+        <a href="#">Shop <i class="fas fa-chevron-down"></i></a>
+        <div class="dropdown-content">
+          <div class="dropdown-submenu">
+            <a href="casual.html">Men <i class="fas fa-chevron-right"></i></a>
+            <div class="submenu-content">
+              <a href="product.html">T-shirts</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="#">On Sale</a>
+      <a href="#">New Arrivals</a>
+      <a href="#">Brands</a>
+    </nav>
+    <div class="search-bar">
+      <i class="fas fa-search"></i>
+      <input type="text" placeholder="Search for products..." />
+    </div>
+    <div class="nav-icons">
+      <a href="#" class="mobile-search" style="display: none"><i class="fas fa-search"></i></a>
+      <a href="cart.html"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round" style="width: 1em; height: 1em; vertical-align: -0.125em;">
+          <circle cx="9" cy="21" r="1"></circle>
+          <circle cx="20" cy="21" r="1"></circle>
+          <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+        </svg></a>
+      <a href="#"><i class="far fa-user-circle"></i></a>
+    </div>
+  </header>
+
+  <hr style="border: 0; border-top: 1px solid #0000001a; margin: 0 100px" class="desktop-hr" />
+
+  <!-- Breadcrumb -->
+  <div class="breadcrumb">
+    <a href="../index.html">Home</a> <i class="fas fa-chevron-right"></i>
+    <span>Cart</span>
+  </div>
+
+  <!-- Cart Content -->
+  <main class="cart-container">
+    <h1 class="cart-title">YOUR CART</h1>
+    
+    <div class="cart-content">
+      <!-- Left Column: Cart Items -->
+      <div class="cart-items-wrapper">
+        <div class="cart-items-list" id="cart-items-list">
+          <!-- Dynamically filled by JS -->
+        </div>
+      </div>
+      
+      <!-- Right Column: Order Summary -->
+      <div class="order-summary-wrapper">
+        <h2 class="summary-title">Order Summary</h2>
+        <div class="summary-row">
+          <span class="summary-label">Subtotal</span>
+          <span class="summary-value" id="summary-subtotal">$0</span>
+        </div>
+        <div class="summary-row">
+          <span class="summary-label">Discount (-20%)</span>
+          <span class="summary-value discount-value" id="summary-discount">-$0</span>
+        </div>
+        <div class="summary-row">
+          <span class="summary-label">Delivery Fee</span>
+          <span class="summary-value" id="summary-delivery">$15</span>
+        </div>
+        <hr class="summary-divider">
+        <div class="summary-row total-row">
+          <span class="summary-label">Total</span>
+          <span class="summary-value" id="summary-total">$0</span>
+        </div>
+        
+        <div class="promo-code-box">
+          <div class="promo-input-wrapper">
+            <i class="fas fa-tag"></i>
+            <input type="text" placeholder="Add promo code" />
+          </div>
+          <button class="btn-primary apply-promo-btn">Apply</button>
+        </div>
+        
+        <button class="btn-primary checkout-btn">Go to Checkout <i class="fas fa-arrow-right"></i></button>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="newsletter-box">
+      <h2>STAY UPTO DATE ABOUT OUR LATEST OFFERS</h2>
+      <div class="newsletter-form">
+        <div class="input-wrapper">
+            <i class="far fa-envelope"></i>
+          <input type="email" placeholder="Enter your email address" />
+        </div>
+        <button class="btn-subscribe">Subscribe to Newsletter</button>
+      </div>
+    </div>
+    <div class="footer-content">
+      <div class="footer-col brand-col">
+        <div class="logo">SHOP.CO</div>
+        <p>
+          We have clothes that suits your style and which you're proud to
+          wear. From women to men.
+        </p>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+      <div class="footer-col links-col">
+        <h4>COMPANY</h4>
+        <a href="#">About</a>
+        <a href="#">Features</a>
+        <a href="#">Works</a>
+        <a href="#">Career</a>
+      </div>
+      <div class="footer-col links-col">
+        <h4>HELP</h4>
+        <a href="#">Customer Support</a>
+        <a href="#">Delivery Details</a>
+        <a href="#">Terms & Conditions</a>
+        <a href="#">Privacy Policy</a>
+      </div>
+      <div class="footer-col links-col">
+        <h4>FAQ</h4>
+        <a href="#">Account</a>
+        <a href="#">Manage Deliveries</a>
+        <a href="#">Orders</a>
+        <a href="#">Payments</a>
+      </div>
+      <div class="footer-col links-col">
+        <h4>RESOURCES</h4>
+        <a href="#">Free eBooks</a>
+        <a href="#">Development Tutorial</a>
+        <a href="#">How to - Blog</a>
+        <a href="#">Youtube Playlist</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>Shop.co © 2000-2023. All Rights Reserved</p>
+      <div class="payment-methods">
+        <i class="fab fa-cc-visa"></i>
+        <i class="fab fa-cc-mastercard"></i>
+        <i class="fab fa-cc-paypal"></i>
+        <i class="fab fa-cc-apple-pay"></i>
+        <i class="fab fa-google-pay"></i>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/script.js"></script>
+</body>
+</html>
