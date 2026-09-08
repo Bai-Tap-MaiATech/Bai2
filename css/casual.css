@@ -284,8 +284,19 @@
         display: flex;
     }
 
+    .category-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+
     .category-header h2 {
         font-size: 24px;
+    }
+
+    .category-meta {
+        width: 100%;
+        justify-content: space-between;
     }
 
     /* Off-canvas sidebar */

@@ -538,6 +538,8 @@ a {
     .mobile-search { display: inline-block !important; }
     
     .breadcrumb { padding: 20px; font-size: 14px; }
+    
+    hr, .desktop-hr { margin: 0 20px !important; }
 
     /* Product Grids */
     .product-section { padding: 40px 20px; }
@@ -550,10 +552,13 @@ a {
         padding-bottom: 20px;
     }
     .product-card { 
+        min-width: 0; /* Reset desktop 250px min-width to fix overflow in grids */
+    } 
+    .product-grid .product-card {
         min-width: 160px; 
         flex: 0 0 calc(50% - 7.5px);
         scroll-snap-align: start; 
-    } 
+    }
     .product-img-placeholder { height: 200px; }
     .product-title { font-size: 16px; }
     .price, .original-price { font-size: 20px; }
