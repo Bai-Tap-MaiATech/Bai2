@@ -531,9 +531,22 @@ a {
 @media (max-width: 768px) {
     /* Top Bar & Navbar */
     .top-bar { font-size: 12px; }
-    .navbar { padding: 16px 20px; gap: 16px; justify-content: space-between; }
+    .navbar { padding: 16px 20px; gap: 16px; justify-content: space-between; position: relative; }
     .mobile-menu-btn { display: block !important; font-size: 24px; cursor: pointer; }
     .nav-links, .search-bar { display: none !important; }
+    .nav-links.active {
+        display: flex !important;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #FFFFFF;
+        padding: 20px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1);
+        z-index: 100;
+        gap: 16px;
+    }
     .logo { font-size: 24px; margin-right: auto; margin-left: 16px; }
     .mobile-search { display: inline-block !important; }
     
